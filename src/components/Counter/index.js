@@ -15,15 +15,16 @@ class Counter extends Component {
 
   render() {
     const {count} = this.state
+    console.log(`the count is ${count}`)
     return (
       <div className="app-container">
         <h1 className="heading">Counter</h1>
         <p className="count">{count}</p>
         <div>
-          <button className="button" onClick={this.onIncrement}>
+          <button type="button" className="button" onClick={this.onIncrement}>
             Increase
           </button>
-          <button className="button" onClick={this.onDecrement}>
+          <button type="button" className="button" onClick={this.onDecrement}>
             Decrease
           </button>
         </div>
